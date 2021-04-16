@@ -32,17 +32,17 @@ public class LutadorController {
 
     @GetMapping("/contagem-vivos")
     public ResponseEntity getContagemVivos(){
-
-        Optional<Lutador> lutadorOptional =repository.findAll(l.getVivo())
-    }
-
-    @PostMapping("/id/concentrar")
-    public ResponseEntity postConcentrar(@PathVariable @Valid  Integer id, @PathVariable @Valid Integer concentrar) {
-        Optional<Lutador> lutadorOptional =repository.findById(id);
-
-        if(lutadorOptional.isPresent() && ){
-
-        }
+        l.getCont();
         return ResponseEntity.status(201).build();
     }
+
+//    @PostMapping("/id/concentrar")
+//    public ResponseEntity postConcentrar(@PathVariable @Valid  Integer id, @PathVariable @Valid Integer concentrar) {
+//        Optional<Lutador> lutadorOptional =repository.findById(id);
+//
+//        if(lutadorOptional.isPresent() && ){
+//
+//        }
+//        return ResponseEntity.status(201).build();
+//    }
 }

@@ -26,7 +26,7 @@ public class Lutador {
 
     private Boolean vivo;
 
-
+    private int cont = 0;
 
 
     public Integer getId() {
@@ -54,32 +54,33 @@ public class Lutador {
     }
 
     public Integer getVida() {
-        return vida;
+        return vida = 100;
     }
 
-    public void setVida(Integer vida) {
-        this.vida = 100;
-    }
+
 
     public Integer getConcentracoesRealizadas() {
-        return concentracoesRealizadas;
+        return concentracoesRealizadas = 0;
     }
 
-    public void setConcentracoesRealizadas(Integer concentracoesRealizadas) {
-        this.concentracoesRealizadas = 0;
-    }
+
 
     public Boolean getVivo() {
-        return vivo;
-    }
-
-    public void setVivo(Boolean vivo) {
+        cont ++;
         if(vida>0){
-            this.vivo = true;
+          return  this.vivo = true;
         }
         else {
-            this.vivo = false;
+            return  this.vivo = false;
         }
 
     }
+
+//    public int getCont() {
+//        return cont;
+//    }
+//
+//    public void setCont(int cont) {
+//        this.cont = cont;
+//    }
 }
