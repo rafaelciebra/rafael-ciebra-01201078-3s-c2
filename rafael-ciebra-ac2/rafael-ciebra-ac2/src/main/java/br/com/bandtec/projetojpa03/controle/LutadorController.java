@@ -32,7 +32,7 @@ public class LutadorController {
 
     @GetMapping("/contagem-vivos")
     public ResponseEntity getContagemVivos(){
-        l.getCont();
+//        l.getCont();
         return ResponseEntity.status(201).build();
     }
 
