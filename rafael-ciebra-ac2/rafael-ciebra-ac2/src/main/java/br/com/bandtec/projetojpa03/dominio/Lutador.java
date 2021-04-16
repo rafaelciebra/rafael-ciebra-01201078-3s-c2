@@ -2,7 +2,6 @@ package br.com.bandtec.projetojpa03.dominio;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import java.time.LocalDate;
 
 @Entity
 public class Lutador {
@@ -26,7 +25,8 @@ public class Lutador {
 
     private Boolean vivo;
 
-    private int cont = 0;
+    private int contV = 0;
+    private int contM = 0;
 
 
     public Integer getId() {
@@ -66,7 +66,7 @@ public class Lutador {
 
 
     public Boolean getVivo() {
-        cont ++;
+        contV ++;
         if(vida>0){
           return  this.vivo = true;
         }
@@ -76,7 +76,11 @@ public class Lutador {
 
     }
 
-//    public int getCont() {
+    public void setContV(int contV) {
+        this.contV = contV;
+    }
+
+    //    public int getCont() {
 //        return cont;
 //    }
 //
